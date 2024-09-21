@@ -3,7 +3,6 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -44,8 +43,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Jakeb Ray Portfolio Website',
+  description: "Portfolio website built in React by Jakeb Ray",
 };
 
 /**
@@ -69,18 +68,17 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Jakeb Ray`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Columbia, MO based <strong className="text-stone-100">IT Professional</strong> with experience in SWE, AI, Networking, and Web Development, currently working full time
+        at <strong className="text-stone-100">Club Car Wash</strong> as an IT professional, but also a part time (limited time) <strong className="text-stone-100">AI Integration/Engineering Intern</strong> at the <strong className="text-stone-100">Missouri Innovation Center</strong> and part time (limited time) <strong className="text-stone-100">Web Application Engineer</strong> at <strong className="text-stone-100">Cybermissions</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can find me tutoring highschool students in <strong className="text-stone-100">AP Computer Science</strong>,
+        mentoring kids as a <strong className="text-stone-100">Robotics Mentor</strong>, or working on my projects for{' '}
+        <strong className="text-stone-100">Missouri Innovation Center</strong> and <strong className="text-stone-100">Cybermissions</strong>.
       </p>
     </>
   ),
@@ -104,16 +102,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a 24 year old IT enthusiest, volunteer, mentor, and part-time student. I work full time job as IT Specialist, but also work my AI internship on limited hours a week, usually done off-site with updates and sync done on-site every other week. My Web Development job is also only a couple of hours a week remotely. Most of my freetime is spent working on websites, Agentic-RAG applications, and tutoring.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Columbia, MO', Icon: MapIcon},
+    {label: 'Age', text: '24', Icon: CalendarIcon},
+    {label: 'Interests', text: 'Programming, Startups, Chess', Icon: SparklesIcon},
+    {label: 'Study', text: 'Kansas State University (Machine Learning), Moberly Area Community College (Cybersecurity)', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Club Car Wash, Missouri Innovation Center, Cybermissions', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -121,20 +116,21 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
+
   {
-    name: 'Spoken languages',
+    name: 'Backend development',
     skills: [
       {
-        name: 'English',
-        level: 10,
+        name: 'Python',
+        level: 8,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'PHP',
+        level: 8,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Node.js',
+        level: 6,
       },
     ],
   },
@@ -142,50 +138,50 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
+        name: 'JavaScript',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'React',
+        level: 5.7,
+      },
+      {
+        name: 'TypeScript',
+        level: 5,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'AI/ML',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
+        name: 'OpenAI API',
+        level: 7,
       },
       {
-        name: 'Rust',
+        name: 'TensorFlow',
         level: 5,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'PyTorch',
+        level: 5,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Database Technologies',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'SQL',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Vector Databases',
+        level: 6,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'NoSQL',
+        level: 4.7,
       },
     ],
   },
@@ -268,40 +264,62 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    date: 'Estimated 2027',
+    location: 'Kansas State University (Remote)',
+    title: 'Bachelors of Science - Machine Learning and Autonomous Systems',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
+    date: '2021 - 2024',
+    location: 'Moberly Area Community College',
+    title: 'Associates of Science - Cybersecurity',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'August 2024 - Present',
+    location: 'Club Car Wash',
+    title: 'Information Technology Specialist',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        <strong>-</strong> Perform network analysis and troubleshooting on servers for CCW sites (<strong>Cisco, Meraki, CLI tools</strong>).<br></br>
+        <strong>-</strong> Automate various network processes over remote connections. This includes power cycling, gathering network statistics, user creation, etc. (<strong>Powershell, SQL</strong>).
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'January 2024 - Present',
+    location: 'Missouri Innovation Center',
+    title: 'AI Integration/Engineering Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+<strong>-</strong> Responsible for development of custom-trained AI chatbot that provides up-to-date information on SBIR/STTR grants and participating agencies, aimed at increasing grant distribution for innovative startups (<strong>Python, Pinecone, Cloudflare, JavaScript, OpenAI API, Retrieval-Augmented Generation, NLP, Machine Learning, AI, Deep Learning, Vectorization</strong>).
       </p>
+    ),
+  },
+  {
+    date: 'September 2024 - Present',
+    location: 'Cybermissions',
+    title: 'Web Application Engineer',
+    content: (
+      <p>
+<strong>-</strong> Solo developer responsible for creating modern web applications for Christian Missionary organization. Currently modernizing web application with site statistics of 210,000 visitors annually (<strong>Ruby, Rails, JavaScript, Bootstrap, Tailwind</strong>).
+      </p>
+    ),
+  },
+  {
+    date: 'January 2023 - August 2024',
+    location: 'Socket Telecommunications',
+    title: 'Software/Automation Engineering and Support',
+    content: (
+      <ul>
+  <li><strong>-</strong> Wrote an automation script to web-drive cloud dashboard to automatically unbind over 1000 device licenses, saving the company $3,000 (<strong>Python, Selenium, Git, TP-Link</strong>).</li><br></br>
+  <li><strong>-</strong> Developed a script to automatically configure new enterprise-level routers transitioning business-issued routers from WiFi 5 to WiFi 6 (<strong>PHP, RouterOS, BASH, Python, MikroTik</strong>).</li><br></br>
+  <li><strong>-</strong> Lead developer in script that parsed DOM for customer shipping information and placed it below the USPS label so the outbound support no longer had to manually write the customers address on envelope (<strong>JavaScript, PDF.js</strong>).</li>
+</ul>
+
     ),
   },
 ];
